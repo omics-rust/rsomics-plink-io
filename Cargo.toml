@@ -33,7 +33,7 @@ harness = false
 
 [dependencies]
 rsomics-common = { version = "0.6" }
-rsomics-pgen = { version = "0.1" }
+rsomics-pgen = { version = "0.2" }
 clap = { version = "4", features = ["derive"] }
 anyhow = "1"
 
