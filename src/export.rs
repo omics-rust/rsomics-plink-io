@@ -56,7 +56,6 @@ pub fn to_vcf(pgen: &Pgen, out: &mut impl Write) -> io::Result<()> {
 /// Row = one sample, column = one variant, space-separated.
 /// Header line: variant IDs.
 pub fn to_012(pgen: &Pgen, out: &mut impl Write) -> io::Result<()> {
-    // Header: sample FID_IID as first column, then variant IDs.
     write!(out, "FID_IID")?;
     for var in &pgen.variants {
         write!(out, "\t{}", var.id)?;
